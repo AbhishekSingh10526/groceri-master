@@ -72,7 +72,7 @@ class Order(db.Model):
 
 # create database if it doesn't exist
 with app.app_context():
-    db.create_all()
+   
     # create admin if admin does not exist
     admin = User.query.filter_by(username='admin').first()
     if not admin:
